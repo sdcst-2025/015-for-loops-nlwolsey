@@ -1,10 +1,8 @@
 """
-iterate through the list of names and display "Finished!" when it is done.
+print the multiples of 4 and print "Finished" when done.
 """
 
-people = ("Fred","Linda","Wyn","Phil","Elaine","William","Isaac","Bligh")
-
-for i in people
+for i in range(12)
 print(i)
 else
 print("Finished!")

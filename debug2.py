@@ -1,6 +1,5 @@
 """
-print all of the names in the list
+Print the multiples of 5
 """
-people = ("Joe","Sally","Christine","Benjamin","Casey")
-for i in people
-  print(f"Hello {i}, how are you?")
+for i in range(12)
+  print( 5 * i)
