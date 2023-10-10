@@ -3,14 +3,16 @@
 The indexing variable starts with an initial value, and continues until the
 indexing value reaches the ending value.
 
-If only 1 value is included, it is assumed to be the ending value and the
-beginning value is 0
-
-If two values are given, the first is the beginning value:
-example 3b.py
+When 2 values are given, the initial value is set to be the first number
+This will iterate through the sequence 10, 11, 12, 13, 14
 """
 
-# in this loop example, no starting value is given
-# the loop will start at 0, and continue. It will not include 10, but will stop at 9
-for i in range(10):
+for i in range(10, 15):
+    print(i)
+else:
+    print("We have printed the numbers 10 through 14!")
+    
+beginning = 10
+ending = 15
+for i in range(beginning, ending):
     print(i)

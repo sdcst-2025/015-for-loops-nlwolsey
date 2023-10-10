@@ -1,26 +1,21 @@
-#! python
+"""
+This loop will repeat the print statement 10 times.
+Note that when we use the for loop, i, the loop variable.  It will
+store the value of whatever you using to count and it changes every
+time you perform an "iteration" through the loop.
+
+The iteration starts at an initial value of 0 (not 1) and ends at the
+integer value BEFORE your end value.  In this case, it goes from 0 - 9
+and takes on all the integer values inbetween.
+
+Note:  The ending value must be an integer.
+
+The indexing variable can be used in calculations within the loop!
 
 """
-We can cycle through all of the members of a tuple using a for... loop.
-The for loop uses an indexing variable that stores the current tuple
-member and can be accessed within the block
 
-if you want to break out of the for loop, you can use break at any point
-in the block.  All future iterations are skipped and the loop exits at
-the current point (see example2a.py)
-
-if you want to break out of the loop, but continue on to further iterations,
-you can use continue. (see example2b.py)
-"""
-
-players = ("Guile", "Cammy", "Ryu", "Ken", "Chun-Li")
-
-for i in players:
-    """ 
-    here, i is the indexing variable.  
-    All the tuple members will take turns being i
-    """
-    print("===")
-    print( i + " is going to the mall")
-    print("---")
-    print("\n")
+for i in range(10):
+  double = 2 * i
+  print(f"The number right now is {i} and its doubled value is {double}")
+else:
+  print("We are finished!")
