@@ -22,3 +22,12 @@ enter a number:4
 ****
 
 """
+
+s = int(input("enter the side of a box (integer less than 10): "))
+if s >= 10:
+    print("invalid, value is greater than or equal to 10")
+else:
+    for i in range(s):
+        for r in range(s):
+            print("*", end= '' )
+        print("")

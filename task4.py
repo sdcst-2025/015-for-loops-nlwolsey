@@ -23,3 +23,18 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+bal = input("enter your current balance")
+totalbal = 0
+totalpay = 0
+totalpurc = 0
+for i in range(1,1200):
+    newpurc = float(input(f"enter TOTAL purchases for month {i}: "))
+    totalpurc = totalpurc + newpurc
+    newpay = float(input(f"enter TOTAL credit payments for month {i}: "))
+    totalpay = totalpay + newpay
+    totalbal = totalbal + totalpurc - totalpay
+    intrst = totalbal * 0.02
+    print(f"2% interest has been charged: {intrst}")
+    print(f"Your closing balance is {totalbal-intrst}")
+else:
+    print("you are 100 years old... stop worrying about your debt!")
